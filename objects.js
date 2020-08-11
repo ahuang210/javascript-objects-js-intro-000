@@ -8,7 +8,7 @@ var updatePlaylist = (playlist, artistName, songTitle) => {
 updatePlaylist(playlist, 'Phil Ochs', "Here's to the State of Mississippi")
 
 var removeFromPlaylist = (playlist, artistName) => {
-  delete playlist.artistName;
+  delete playlist[artistName];
   return playlist
 }
 
